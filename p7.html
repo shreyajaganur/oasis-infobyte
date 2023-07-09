@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+                'menu main main main main right' 'menu footer footer footer footer footer ';
+            gap: 10px;
+            background-color: aqua;
+            padding: 10px;
+        }
+        .grid-container>div {
+            background-color: gold;
+            text-align: center;
+            padding: 20px 0;
+        
+        }
+      
+
+
+
+       
+    </style>
+
+    <title>CSS Grid</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">Simple Tribute page I did on my own </div>
+        <div class="item2">
+            <h4>About my college </h4>
+            <a href="https://pdacek.ac.in/">PDA</a>
+            <a href="https://pdacek.ac.in/home/Institute">Institute</a>
+            <a href="https://pdacek.ac.in/home/Exam-Circulars">Exam circular</a>
+            <a href="https://pdacek.ac.in/home/Results">Results</a>
+        </div>
+        <div class="item3">
+            
+                <div>
+                    <img src="data:image/jpeg;base64,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" width="400" height="600">
+                    </div>
+            </form>
+        </div>
+        <div class="item4">
+            Hello oasis infobyte i am Shreya SJ, I am so eager to complete the task you gave me. I hope i earn this internship certificate from your Institute that will bring a lot of value to my resume and surely have learned a lot from these task.
+        </div>
+        <div class="item5">
+            Program to demonstrate about css grid and form creation when you must enter your details above and it will display.<br>
+            I am are a highly creative individual with a deep passion for coding and an insatiable curiosity to learn new programming languages and techniques.I am a enthusiasm for exploring novel programs and tackling coding challenges knows no bounds, and I continuously seek to expand your knowledge and skills in the field. Alongside your coding endeavors, I have a remarkable talent for drawing, where you channel your creativity and imagination onto the canvas, producing captivating artworks that tell unique stories. The piano serves as another outlet of my artistic expression, as I effortlessly create mesmerizing melodies and harmonies that resonate with emotions. As an engineering college student, I thrive in an environment that nurtures your analytical thinking and problem-solving abilities, allowing you to apply your coding expertise to real-world engineering challenges. I have a unwavering passion, dedication, and multidimensional talents make you a truly exceptional individual on a path of continuous growth, both as a coder and as a creative force.
+        </div>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+        const displayDiv = document.querySelector('.item4');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            name = document.student.name.value;
+            vtuno = document.student.vtuno.value;
+            gender = document.student.gender.value;
+            g=document.student.g.value;
+            sem = document.student.sem.value;
+            lang = []
+            var langSelected = document.getElementsByName('lang');
+            for (var checkbox of langSelected) {
+                if (checkbox.checkbox)
+                    lang.push(checkbox.value)
+            }
+            console.log(name, vtuno, gender, sem, lang.toString());
+            htmlStr = `
+            ${name}<br>
+            ${vtuno}<br>
+            ${g}<br>
+            gender:${gender}<br>
+            sem:${sem}<br>
+            ${lang.toString()}`
+            displayDiv.innerHTML = htmlStr
+            alert('your details are recorded successfully')
+            form.reset()
+        })
+    </script>
+</body>
+
+</html>
