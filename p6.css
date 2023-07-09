@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: coral;
+}
+
+.input-character{
+    background-color: aquamarine;
+    padding: 25px;
+    border-radius: 10px;
+    height: 60px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 8px;
+    margin-top: 20px;
+}
+.input-container input{
+    padding: 8px;
+    width: 300px;
+    border: 1px solid;
+}
+.input-container button{
+    padding: 8px;
+    background-color: chartreuse;
+    border: 1px solid;
+
+}
+.todo-item{
+    background-color: cornflowerblue;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px;
+    margin-top: 10px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.todo-item img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;}
